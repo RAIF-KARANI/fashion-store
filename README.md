@@ -47,7 +47,23 @@ src/main/webapp/
 ### Database Setup
 
 1. Create a MySQL database (the app expects `fashion_store` on `localhost:3307` by default).
-2. Update the connection details in [`src/main/java/com/fashionstore/util/DBConnection.java`](src/main/java/com/fashionstore/util/DBConnection.java) to match your local MySQL host, port, username, and password.
+2. Configure the connection via environment variables (see below), or rely on the local defaults in [`DBConnection.java`](src/main/java/com/fashionstore/util/DBConnection.java).
+
+### Configuration
+
+Database credentials are read from environment variables, falling back to local defaults if unset:
+
+| Variable  | Default                                        | Description            |
+|-----------|-------------------------------------------------|-------------------------|
+| `DB_URL`  | `jdbc:mysql://localhost:3307/fashion_store`     | JDBC connection URL    |
+| `DB_USER` | `root`                                          | Database username      |
+| `DB_PASS` | `root`                                          | Database password      |
+
+```bash
+export DB_URL="jdbc:mysql://localhost:3307/fashion_store"
+export DB_USER="root"
+export DB_PASS="your-password"
+```
 
 ### Run Locally
 
