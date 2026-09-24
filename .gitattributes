@@ -1,0 +1,16 @@
+# Normalize line endings for all text files
+* text=auto eol=lf
+
+# Windows scripts must keep CRLF
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Binary files - do not touch line endings
+*.jpg binary
+*.jpeg binary
+*.png binary
+*.gif binary
+*.ico binary
+*.jar binary
+*.war binary
+*.class binary
