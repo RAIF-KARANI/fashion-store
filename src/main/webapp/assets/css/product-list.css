@@ -1,0 +1,213 @@
+/* ===== PAGE HEADER ===== */
+.page-header {
+    background: linear-gradient(135deg, #f5f0eb 0%, #fce4ec 100%);
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.page-header-content h1 {
+    font-size: 36px;
+    font-weight: 800;
+    color: #1a1a1a;
+    margin-bottom: 8px;
+}
+
+.page-header-content p {
+    font-size: 15px;
+    color: #666;
+}
+
+/* ===== SHOP CONTAINER ===== */
+.shop-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+/* ===== FILTER SIDEBAR ===== */
+.filter-sidebar {
+    width: 250px;
+    flex-shrink: 0;
+    background: #fff;
+    border-radius: 16px;
+    padding: 25px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.06);
+    position: sticky;
+    top: 90px;
+}
+
+.filter-section {
+    margin-bottom: 30px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.filter-section:last-of-type {
+    border-bottom: none;
+}
+
+.filter-section h3 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.filter-list {
+    list-style: none;
+}
+
+.filter-list li {
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #555;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-bottom: 5px;
+}
+
+.filter-list li:hover {
+    background: #f5f0eb;
+    color: #1a1a1a;
+}
+
+.filter-list li.active {
+    background: #1a1a1a;
+    color: #fff;
+    font-weight: 600;
+}
+
+.price-inputs {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.price-inputs input {
+    width: 90px;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 13px;
+    outline: none;
+}
+
+.price-inputs input:focus {
+    border-color: #1a1a1a;
+}
+
+.price-inputs span {
+    color: #999;
+    font-size: 12px;
+}
+
+.btn-filter {
+    width: 100%;
+    padding: 10px;
+    background: #1a1a1a;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-filter:hover {
+    background: #333;
+}
+
+#sortSelect {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 13px;
+    outline: none;
+    cursor: pointer;
+    color: #1a1a1a;
+}
+
+.btn-clear {
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    color: #e8b4b8;
+    border: 1px solid #e8b4b8;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 10px;
+}
+
+.btn-clear:hover {
+    background: #e8b4b8;
+    color: #fff;
+}
+
+/* ===== PRODUCTS AREA ===== */
+.products-area {
+    flex: 1;
+}
+
+.products-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+#productCount {
+    font-size: 14px;
+    color: #666;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* ===== NO PRODUCTS ===== */
+.no-products {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 60px 20px;
+    color: #999;
+}
+
+.no-products i {
+    font-size: 50px;
+    margin-bottom: 15px;
+    color: #ddd;
+}
+
+.no-products p {
+    font-size: 16px;
+}
+
+/* ===== SKELETON ===== */
+.skeleton {
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+    border-radius: 16px;
+    height: 320px;
+}
+
+@keyframes shimmer {
+    0%   { background-position: -200% 0; }
+    100% { background-position:  200% 0; }
+}

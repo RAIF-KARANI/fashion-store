@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail - Fashion Store</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/product-detail.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="home.html">👗 FashionStore</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="product-list.html?categoryId=2">Women</a></li>
+                <li><a href="product-list.html?categoryId=1">Men</a></li>
+                <li><a href="product-list.html?categoryId=3">Kids</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="cart.html" class="icon-btn cart-icon">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count" id="cartCount">0</span>
+                </a>
+                <a href="login.html" class="icon-btn" id="loginBtn">
+                    <i class="fas fa-user"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="product-container" id="productContainer">
+        <h2 style="text-align:center;width:100%;">Loading...</h2>
+    </div>
+
+    <script src="../assets/js/product-detail.js"></script>
+    <script src="../assets/js/auth.js"></script>
+</body>
+</html>

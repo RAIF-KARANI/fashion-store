@@ -1,0 +1,119 @@
+/* ===== HERO ===== */
+.hero {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    min-height: 85vh;
+}
+.hero-content { flex: 1; max-width: 500px; }
+.hero-tag {
+    font-size: 13px;
+    font-weight: 600;
+    color: #e8b4b8;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+.hero-content h1 {
+    font-size: 58px;
+    font-weight: 800;
+    line-height: 1.1;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+}
+.hero-content h1 span { color: #e8b4b8; }
+.hero-desc {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 35px;
+    line-height: 1.8;
+}
+.hero-image {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+.hero-circle {
+    width: 450px;
+    height: 450px;
+    background: #f5f0eb;
+    border-radius: 50%;
+}
+
+/* ===== CATEGORIES ===== */
+.categories-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 20px;
+}
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+.category-card {
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    height: 350px;
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.category-card:hover { transform: translateY(-5px); }
+.category-card.women { background: #f5e6e8; }
+.category-card.men   { background: #e8f0e8; }
+.category-card.kids  { background: #fef9e7; }
+.category-card-overlay {
+    width: 100%;
+    background: linear-gradient(transparent, rgba(0,0,0,0.5));
+    padding: 20px;
+    text-align: center;
+}
+.category-card-overlay span {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* ===== SALE BANNER ===== */
+.sale-banner {
+    background: #f0f6fb;
+    padding: 80px 20px;
+    text-align: center;
+}
+.sale-content p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 5px;
+}
+.sale-content h2 {
+    font-size: 60px;
+    font-weight: 800;
+    color: #1a1a1a;
+    margin-bottom: 25px;
+    font-style: italic;
+}
+
+/* ===== FEATURED PRODUCTS ===== */
+.featured-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 20px;
+}
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
