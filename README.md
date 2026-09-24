@@ -59,6 +59,8 @@ Database credentials are read from environment variables, falling back to local 
 | `DB_USER` | `root`                                          | Database username      |
 | `DB_PASS` | `root`                                          | Database password      |
 
+Copy [`.env.example`](.env.example) to `.env` and adjust the values, or export them directly:
+
 ```bash
 export DB_URL="jdbc:mysql://localhost:3307/fashion_store"
 export DB_USER="root"
