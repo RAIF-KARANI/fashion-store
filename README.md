@@ -2,6 +2,8 @@
 
 A Java servlet-based e-commerce web application for browsing and purchasing fashion products.
 
+![FashionStore screenshot](docs/screenshot.png)
+
 ## Features
 
 - **Product catalog** — browse products by category (men, women, kids), with listing and detail pages
