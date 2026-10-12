@@ -164,8 +164,8 @@ function clearFilters() {
     loadAllProducts();
 }
 
-function renderProducts(products) {
-    const grid = document.getElementById('productsGrid');
+function renderProducts(products, gridId) {
+    const grid = document.getElementById(gridId);
     grid.innerHTML = '';
 
     document.getElementById('productCount').textContent = products.length + ' products found';
